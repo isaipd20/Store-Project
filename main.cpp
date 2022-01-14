@@ -38,6 +38,27 @@ void changeItem(int num) {
     cart[num].quantity = x.quantity;
 }
 
+void checkAvailability(std::string item) {
+    std::vector<std::string> itemsList;
+    bool x = false;
+
+    itemsList.push_back("water");
+    itemsList.push_back("apples");
+    itemsList.push_back("watermelon");
+    itemsList.push_back("chips");
+
+    for (unsigned int i = 0; i < itemsList.size(); i++) {
+        if (itemsList[i] == item) {
+            std::cout << "item is available" << std::endl;
+            x = true;
+        }
+    }
+
+    if (x == false) {
+        std::cout << "item is not available" << std::endl;
+    }
+}
+
 void menu(int choise) {
     cartValues Cart;
 
@@ -96,6 +117,15 @@ void menu(int choise) {
             std::cout << "Your Cart is empty. Add items!!" << std::endl;
         }
         break;
+
+    case 6:
+        std::string item;
+
+        std::cout << "What item do you want to check for availability?" << std::endl;
+        std::cin >> item;
+
+        checkAvailability(item);
+        break;
     }
 }
 
@@ -105,7 +135,7 @@ int main()
 
     while (choise != 3) {
         std::cout << "Welcome to the store. Options available: " << std::endl;
-        std::cout << " 1: add item to cart \n 2: remove item from cart \n 3: quit \n 4: change item \n 5: show items \n";
+        std::cout << " 1: add item to cart \n 2: remove item from cart \n 3: quit \n 4: change item \n 5: show items \n 6: check availability \n";
         std::cin >> choise;
         menu(choise);
     }
