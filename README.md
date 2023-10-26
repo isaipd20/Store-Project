@@ -1,4 +1,3 @@
-# Store-Project
 
 # 💼 Store Menu <a name="about-project"></a>
 <br>
