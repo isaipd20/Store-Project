@@ -1,6 +1,7 @@
 #include <string>
 #include <iostream>
 #include <vector>
+#include "vendor.h"
 
 struct cartValues {
     std::string item;
