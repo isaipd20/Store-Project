@@ -16,3 +16,4 @@ There is another menu for the vendors where they can add/remove products to the 
 - Tools/Technologies: VS code
 
 # 🕹 Usage
+Use main.exe from the output folder
