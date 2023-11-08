@@ -3,6 +3,7 @@
 namespace Vendor{
     class vendor {
         private:
+            int id;
             int quantity;
             double price;
             std::string name;
