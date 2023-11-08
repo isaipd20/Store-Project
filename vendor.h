@@ -9,6 +9,9 @@ namespace Vendor{
 
         public:
             void addItems();
+            void removeItems();
+            void changeItems();
+            void itemStatus();
         };
 
 }
